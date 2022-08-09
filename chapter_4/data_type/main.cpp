@@ -27,6 +27,10 @@ int main(int argc, char** argv)
     std::cout << "Ptr of TempObj.arr[2]   : " << &obj.arr[2] << std::endl;
     std::cout << "Ptr of TempObj.d              : " << &obj.d << std::endl;
     std::cout << std::endl;
+    unsigned int* offset = reinterpret_cast<unsigned int*>(&obj) + 2;
+    *offset = 8;
+    std::cout << "Val of TempObj.d after    : " << obj.d << std::endl;
+    std::cout << std::endl;
     std::cout << "Val of TempObj.arr[0]   : " << obj.arr[0] << std::endl;
     std::cout << "Val of TempObj.arr[1]   : " << obj.arr[1] << std::endl;
     std::cout << "Val of TempObj.arr[2]   : " << obj.arr[2] << std::endl;

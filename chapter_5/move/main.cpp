@@ -1,18 +1,13 @@
 #include <iostream>
 #include <string>
-
-void func(std::string input)
-{
-    std::cout << "func()    : " << input << std::endl;
-    input.push_back('!');
-    std::cout << "func()    : " << input << std::endl;
-}
+#include <vector>
 
 int main(int argc, char**argv)
 {
+    std::vector<std::string> input_list({"abc","cba"});
     std::string input("hello world");
     std::cout << "main()    : " <<input << std::endl;
-    func(input);
+    input_list.push_back(std::move(input));
     std::cout << "main()    : " <<input << std::endl;
     return 0;
 }
