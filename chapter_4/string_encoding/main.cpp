@@ -4,16 +4,15 @@
 int main(int argc, char** argv)
 {
     std::string str("哈");
-
     std::cout << "String content    : " << str << std::endl;
     std::cout << "String size       : " << str.size() << std::endl;
     std::cout << "String[0]         : " << (int)str[0] << std::endl;
     std::cout << "String[1]         : " << (int)str[1] << std::endl;
     std::cout << "String[2]         : " << (int)str[2] << std::endl;
-
+    std::cout << std::endl;
     char str2[] = {-27,-109,-120};
     std::cout << "String2 content   : " << str2 << std::endl;
-
+    std::cout << std::endl;
     // -27  = 11100101
     // -109 = 10010011
     // -120 = 10001000

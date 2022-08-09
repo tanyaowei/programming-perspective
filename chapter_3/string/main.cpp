@@ -12,33 +12,30 @@ int main(int argc, char** argv)
 
     std::cout  << "String Textarea: " << str << std::endl;
     std::cout  << "String Address: " << (void*) str << std::endl;
-
+    std::cout << std::endl;
     std::cout  << "String Object: " << str2 << std::endl;
     std::cout  << "String Object Address: " << (void*) str2.c_str() << std::endl;
-
+    std::cout << std::endl;
     str2 = "howhello world!";
-
     std::cout  << "String Object: " << str2 << std::endl;
     std::cout  << "String Object Address: " << (void*) str2.c_str() << std::endl;
-    
+    std::cout << std::endl;
     str2 = "how hello world!";
-
     std::cout  << "String Object: " << str2 << std::endl;
     std::cout  << "String Object Address: " << (void*) str2.c_str() << std::endl;
-
+    std::cout << std::endl;
     std::cout  << "String Array: " << str3 << std::endl;
     std::cout  << "String Array Address: " << (void*) &str3 << std::endl;
-
+    std::cout << std::endl;
     std::cout  << "String Array: " << str4 << std::endl;
     std::cout  << "String Array Address: " << (void*) &str4 << std::endl;
-
+    std::cout << std::endl;
     str3[11] = 0;
-
     std::cout  << "String Array: " << str3 << std::endl;
     std::cout  << "String Array Address: " << (void*) &str3 << std::endl;
-
+    std::cout << std::endl;
     std::cout  << "String Array: " << str4 << std::endl;
     std::cout  << "String Array Address: " << (void*) &str4 << std::endl;
-
+    std::cout << std::endl;
     return 0;
 }
