@@ -30,5 +30,7 @@ int main(int argc, char** argv)
     std::cout << "Ptr of CharObj2 cobj2[1]    : " << &cobj2[1] << std::endl;
     std::cout << "Ptr of CharObj2 cobj2[2]    : " << &cobj2[2] << std::endl;
     
+    delete[] cobj2;
+
     return 0;
 }
