@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../../shared/shared.h"
+#include "../../dependencies/include/local/lib.h"
 
 int one_plus_input(int input)
 {

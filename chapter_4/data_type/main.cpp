@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../shared/shared.h"
+#include "../../dependencies/include/local/lib.h"
 
 
 struct TempObj

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 #include <bitset>
-#include "../../shared/shared.h"
+#include "../../dependencies/include/local/lib.h"
 
 int main(int argc, char** argv)
 {

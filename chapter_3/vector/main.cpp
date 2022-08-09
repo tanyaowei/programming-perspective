@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../../shared/shared.h"
+#include "../../dependencies/include/local/lib.h"
 
 
 int main(int argc, char** argv)
