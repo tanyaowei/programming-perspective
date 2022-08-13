@@ -7,9 +7,15 @@ struct Object
     unsigned long d = 4;
 
     int get_a();
+    static int get_e();
 };
 
 int Object::get_a()
 {
     return a;
+}
+
+int Object::get_e()
+{
+    return 100;
 }
