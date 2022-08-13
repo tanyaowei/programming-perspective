@@ -10,7 +10,7 @@ T sum(T a, T b)
 
 int main(int argc, char** argv)
 {
-    std::cout << "hello world! " << circleArea(sum(5,5)) << std::endl;
+    std::cout << __TIME__ << " hello world! " << circleArea(sum(5,5)) << std::endl;
 
     return 0;
 }
