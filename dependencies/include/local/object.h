@@ -8,6 +8,10 @@ struct Object
 
     int get_a();
     static int get_e();
+    virtual int get_f()
+    {
+        return 23;
+    }
 };
 
 int Object::get_a()
@@ -19,3 +23,19 @@ int Object::get_e()
 {
     return 100;
 }
+
+struct ObjectAlpha: public Object
+{
+    virtual int get_f()
+    {
+        return 47;
+    }
+};
+
+struct ObjectOmega: public Object
+{
+    virtual int get_f()
+    {
+        return 99;
+    }
+};

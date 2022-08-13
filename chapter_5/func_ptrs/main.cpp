@@ -14,15 +14,21 @@ int main(int argc, char** argv)
 
     std::cout << "print func1: " << func1(2) << std::endl;
 
-    std::vector<Object> obj_list(3);
+    std::vector<Object*> obj_list({
+        new Object(),
+        new ObjectAlpha(),
+        new ObjectOmega()
+    });
 
     int(Object::* func2)() = &Object::get_a;
     int(* func3)() = &Object::get_e;
+    int(Object::* func4)() = &Object::get_f;
 
     for(size_t i = 0; i < obj_list.size(); ++i)
     {
-        std::cout << "print func2: " << (obj_list[i].*func2)() << std::endl;
-        std::cout << "print func3: " << func3() << std::endl;
+        std::cout << "Object " << i << " print func2: " << (obj_list[i]->*func2)() << std::endl;
+        std::cout << "Object " << i << " print func3: " << func3() << std::endl;
+        std::cout << "Object " << i << " print func4: " << (obj_list[i]->*func4)() << std::endl;
         std::cout << std::endl;
     }
 
